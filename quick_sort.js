@@ -10,7 +10,6 @@ var partition=function(array, p, r){
 var quickSort = function(array, p, r) {
     if(r-p > 0 ) {
         var i = partition(array,p,r);
-        println("i is "+ i);
         quickSort(array,p,i-1);
         quickSort(array,i+1,r);
     }
